@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.144);
+    padding: 10px;
+}
+
+.logo{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+    text-shadow: 2px 2px 8px #00ffee;
+}
+
+#menu ul{
+    display: flex;
+}
+
+#menu ul li{
+    list-style-type: none;
+}
+
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+    margin-left: 80px;
+    font-family: 'Russo One', sans-serif;
+    transition: all 0.2s ease-in-out;
+}
+
+#menu ul li a:hover{
+    color: chartreuse;
+    text-shadow: 2px 2px 8px #ffffff;
+}
+
+#menu{
+    position: absolute;
+    right: 2%;
+    top: 2.5%;
+}
+
+#ham{
+    position: absolute;
+    right: 2%;
+    display: none;
+}
+
+#home{
+    width: 100%;
+    height: 95vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("img/bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 10rem;
+    text-align: center;
+}
+
+#main-content h3{
+    color: white;
+    font-size: 23px;
+    margin: 10px;
+    text-shadow: 3px 3px 8px black;
+}
+
+#main-content h1{
+    color: white;
+    font-size: 32px;
+    text-shadow: 3px 3px 8px black;
+    margin-bottom: 5px;
+}
+
+.animate-me::after{
+    content: "";
+    color: orange;
+    text-shadow: 3px 3px 8px black;
+    animation: changetext 20s infinite linear;
+}
+
+@keyframes changetext{
+    0%{content: "PIZZA";}
+    10%{content: "BURGER";}
+    20%{content: "HOT-DOG";}
+    30%{content: "DOSA";}
+    40%{content: "PAV-BHAJI";}
+    50%{content: "VADA-PAV";}
+    60%{content: "SAMOSA";}
+    70%{content: "KACHORI";}
+    80%{content: "UPMA";}
+    90%{content: "SANDWITCH";}
+    100%{content: "FAST";}
+}
+
+#main-content p{
+    color: white;
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+}
+
+#button-holder{
+    display: flex;
+    margin-top: 5px;
+}
+
+#b1{
+    padding: 15px 30px 15px 30px;
+    margin: 5px;
+    background: linear-gradient(to right, orange, yellow);
+    border: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 4px black;
+    border-radius: 12px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+    border: 2px solid white;
+}
+
+#b2{
+    padding: 15px 30px 15px 30px;
+    margin: 5px;
+    background: linear-gradient(to right, green, rgb(0, 255, 115));
+    border: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 4px black;
+    border-radius: 12px;
+    font-size: 16px;    
+    transition: all 0.3s ease-in-out;
+    border: 2px solid white;
+}
+
+#b1:hover{
+    scale: 120%;
+    text-shadow: 3px 3px 8px black;
+    cursor: pointer;
+}
+
+#b2:hover{
+    scale: 120%;
+    text-shadow: 3px 3px 8px black;
+    cursor: pointer;
+}
+
+#services h1{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 30px;
+}
+
+.cardparent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    border: 2px solid brown;
+    margin: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(243, 243, 243);
+    border-radius: 12px;
+    box-shadow: 4px 4px 8px black;
+    width: 350px;
+}
+
+.card h2{
+    margin: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 4px #00ffee;
+}
+
+.card p{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#about{
+    background: linear-gradient(to right, rgb(241, 93, 93), rgb(92, 211, 92));
+    margin-bottom: 30px;
+}
+
+#about h1{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px;
+    padding: 30px;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 3px 3px 4px #00ffee;
+}
+
+#about p{
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 3px 3px 4px black;
+    padding: 40px;
+}
+
+#contactus{
+    width: 100%;
+    height: 65vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url("img/bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+}
+
+#contactus h1{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 10px;
+    padding: 30px;
+    font-size: 32px;
+    text-align: center;
+    text-shadow: 3px 3px 4px #00ffee;
+}
+
+#form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#form span{
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    text-shadow: 2px 2px 4px black;
+    margin: 3px;
+}
+
+.in{
+    width: 400px;
+    height: 30px;
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+    color: white;
+    border: 2px solid purple;
+    border-radius: 12px;
+    background: none;
+    text-shadow: 2px 2px 4px black;
+}
+
+#form button{
+    margin: 10px;
+    padding: 10px 50px 10px 50px;
+    background: linear-gradient(to right, pink, salmon);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-size: 15px;
+    text-shadow: 2px 2px 4px black;
+    font-family: 'Josefin Sans', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+#form button:hover{
+    scale: 120%;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+@media (max-width: 957px) {
+    #ham{
+        display: block;
+    }
+
+    #menu ul li a{
+        margin: 0;
+        padding: 0;
+        text-shadow: 2px 2px 4px black;
+    }
+
+    #menu ul li{
+        margin-top: 20px;
+    }
+
+    #menu{
+        background-color: rgba(255, 255, 255, 0.548);
+        padding: 30px 40px 30px 40px;
+        border-radius: 12px;
+        box-shadow: 2px 2px 4px black;
+        transition: all 0.3s ease-in-out;
+        top: -50%;
+    }
+
+    #menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width:931px) {
+    .cardparent{
+        flex-direction: column;
+    }
+
+    .card{
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 413px) {
+    #main-content h3{
+        color: white;
+        font-size: 18px;
+        margin: 10px;
+        text-shadow: 3px 3px 8px black;
+    }
+    
+    #main-content h1{
+        color: white;
+        font-size: 28px;
+        text-shadow: 3px 3px 8px black;
+        margin-bottom: 5px;
+    }
+
+    #main-content p{
+        font-size: 17px;
+    }
+
+    .in{
+        width: 350px;
+    }
+}
+
+@media (max-width: 360px) {
+    #b1{
+        padding: 10px 25px 10px 25px;
+        margin: 5px;
+        background: linear-gradient(to right, orange, yellow);
+        border: none;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px black;
+        border-radius: 12px;
+        font-size: 16px;
+        transition: all 0.3s ease-in-out;
+        border: 2px solid white;
+    }
+    
+    #b2{
+        padding: 10px 25px 10px 25px;
+        margin: 5px;
+        background: linear-gradient(to right, green, rgb(0, 255, 115));
+        border: none;
+        color: white;
+        font-family: 'Josefin Sans', sans-serif;
+        text-shadow: 2px 2px 4px black;
+        border-radius: 12px;
+        font-size: 16px;    
+        transition: all 0.3s ease-in-out;
+        border: 2px solid white;
+    }
+    
+    #main-content h3{
+        color: white;
+        font-size: 13px;
+        margin: 10px;
+        text-shadow: 3px 3px 8px black;
+    }
+    
+    #main-content h1{
+        color: white;
+        font-size: 20px;
+        text-shadow: 3px 3px 8px black;
+        margin-bottom: 5px;
+    }
+
+    .in{
+        width: 250px;
+    }
+}
